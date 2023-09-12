@@ -1,5 +1,6 @@
 * {
   background-color: #1f2937;
+  padding: 0px 85px 50px;
 }
 
 a,
@@ -21,7 +22,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 95px 0 95px;
+  margin: 0;
 }
 
 header .logo {
@@ -32,7 +34,6 @@ header .logo {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-right: 250px;
   text-align: right;
 }
 
@@ -55,23 +56,52 @@ header .logo {
 
 section {
   display: flex;
-  align-items: center;
-}
-.hero-container {
-  padding: 10em;
+  flex-direction: row;
+  /* background-color: whitesmoke; */
+  justify-content: center;
   margin: 0;
-  width: 500px;
-}
-section .hero-container {
-  justify-content: column;
 }
 
-section h1 {
-  font-size: 48px;
-  font-weight: 800;
-}
-
-section img {
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  /* background-color: green; */
   height: 300px;
   width: 600px;
+  padding: 0;
+}
+
+.container h1 {
+  font-size: 48px;
+}
+
+.container img {
+  display: flex;
+  height: 300px;
+  width: 600px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.container button {
+  display: flex;
+  background-color: #3882f6;
+  color: hsl(90, 17%, 98%);
+  padding: 6px 32px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 10px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height: 35px;
+  width: 125px;
+}
+
+.container button:hover {
+  background-color: white;
+  color: black;
 }
