@@ -1,0 +1,77 @@
+* {
+  background-color: #1f2937;
+}
+
+a,
+li,
+h1 {
+  color: hsl(90, 17%, 98%);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 24px;
+}
+
+.navbar-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 250px;
+  text-align: right;
+}
+
+.navbar-container li {
+  display: inline;
+  margin: 5px;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.navbar-container a:hover {
+  color: #fff; /* Change the text color on hover */
+}
+
+.navbar-container a:hover {
+  color: gold;
+}
+
+/* Section 1st page */
+
+section {
+  display: flex;
+  align-items: center;
+}
+.hero-container {
+  padding: 10em;
+  margin: 0;
+  width: 500px;
+}
+section .hero-container {
+  justify-content: column;
+}
+
+section h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+section img {
+  height: 300px;
+  width: 600px;
+}
