@@ -1,107 +1,122 @@
-* {
+body {
   background-color: #1f2937;
-  padding: 0px 85px 50px;
+  margin: 0;
+  color: #f9faf8;
 }
 
-a,
-li,
-h1 {
-  color: hsl(90, 17%, 98%);
+ul {
   text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-p {
-  color: #e5e5e5;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;
 }
 
-/* Navbar */
-header {
+h2,
+li {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.navbar,
+.container,
+.second-container {
+  padding: 0 400px 20px 400px;
+}
+/* Navigation Bar */
+.navbar {
+  /* background-color: black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 95px 0 95px;
-  margin: 0;
+  height: 80px;
 }
 
-header .logo {
+.navbar .logo {
   font-size: 24px;
+  color: #f9faf8;
 }
 
-.navbar-container ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-
-.navbar-container li {
-  display: inline;
-  margin: 5px;
-  list-style-type: none;
-  font-size: 18px;
-}
-
-.navbar-container a:hover {
-  color: #fff; /* Change the text color on hover */
-}
-
-.navbar-container a:hover {
-  color: gold;
-}
-
-/* Section 1st page */
-
-section {
+.navbar ul {
   display: flex;
-  flex-direction: row;
-  /* background-color: whitesmoke; */
-  justify-content: center;
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
 
+.navbar li {
+  margin-left: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f9faf8;
+}
+
+.navbar .headlinks a:hover {
+  color: slategray;
+}
+
+/* Hero Main Page */
 .container {
   display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  /* background-color: green; */
-  height: 300px;
-  width: 600px;
-  padding: 0;
+  height: 50vh;
+  justify-content: space-between;
+  padding-top: 50px;
 }
 
-.container h1 {
-  font-size: 48px;
+.hero-container,
+.img-container {
+  max-width: 1200px;
+  color: #fff;
 }
-
-.container img {
-  display: flex;
-  height: 300px;
-  width: 600px;
-  padding-right: 0;
-  padding-left: 0;
+/* .hero-container {
+  background-color: black;
 }
-
-.container button {
-  display: flex;
-  background-color: #3882f6;
-  color: hsl(90, 17%, 98%);
-  padding: 6px 32px;
-  border: none;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 800;
-  margin: 10px 0px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  height: 35px;
-  width: 125px;
-}
-
-.container button:hover {
+.img-container {
   background-color: white;
-  color: black;
+} */
+.hero-container h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero-container p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.img-container img {
+  width: 580px;
+  height: 300px;
+}
+/* Second Mainpage */
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-container header {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.second-container .contain-box {
+  display: flex;
+  width: 500px;
+  padding: 20px;
+  /* border: 1px solid #ccc;
+  background-color: #f9b3f2; */
+  width: 200vh;
+  justify-content: space-between;
+}
+
+.contain-box .flower-image {
+  width: 45vh;
+  height: 50vh;
+  border-radius: 10%;
+  border: 5px solid #3882f6;
 }
