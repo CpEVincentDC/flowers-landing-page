@@ -18,7 +18,8 @@ li {
 .navbar,
 .container,
 .second-container,
-.quote-section {
+.quote-section,
+.call-section {
   padding: 0 400px 20px 400px;
 }
 
@@ -47,6 +48,7 @@ li {
   background-color: #1f2937;
   color: #f9faf8;
 }
+
 /* Navigation Bar */
 .navbar {
   /* background-color: black; */
@@ -83,20 +85,24 @@ li {
 
 .container,
 .second-container,
-.quote-section {
+.quote-section,
+.call-section,
+footer {
   display: flex;
   height: 60vh;
+  width: auto;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
+}
+
+footer {
+  height: 12vh;
 }
 /* Hero Main Page */
-.container {
-  justify-content: space-between;
-}
 
 .hero-container,
 .img-container {
-  max-width: 1200px;
   color: #fff;
 }
 /* .hero-container {
@@ -117,6 +123,7 @@ li {
 }
 
 .img-container img {
+  box-shadow: 5px 5px 5px rgb(161, 183, 209);
   width: 580px;
   height: 300px;
 }
@@ -124,7 +131,6 @@ li {
 
 .second-container {
   flex-direction: column;
-
   background-color: white;
   justify-content: center;
 }
@@ -173,10 +179,10 @@ li {
   justify-content: center;
 }
 
-#inner-section {
+.inner-section {
   box-sizing: border-box;
   height: 20vh;
-  width: 110vh;
+  width: 50vw;
   font-size: 36px;
   font-weight: 300;
   color: #1f2937;
@@ -188,3 +194,58 @@ li {
   color: #1f2937;
   margin: 0 0 0 600px;
 }
+
+/* Call section */
+
+.call-section {
+  flex-direction: column;
+  height: 50vh;
+  background-color: white;
+  justify-content: center;
+}
+
+.inner-call {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #3882f6;
+  height: 18vh;
+  width: 58vw;
+  border-radius: 12px;
+  padding: 55px 150px;
+  overflow: hidden;
+}
+.inner-call div {
+  flex: 2 1 0%;
+}
+.inner-call h2 {
+  font-size: 20px;
+  color: #e5e7eb;
+  padding: 0;
+  margin: 0;
+}
+
+.inner-call p {
+  font-size: 16.5px;
+  margin: 0;
+}
+
+.inner-call .two {
+  flex: 1 1 0%;
+}
+.button2 {
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-weight: 800;
+  border: 2px solid #f9faf8;
+  border-radius: 10px;
+  float: right;
+  margin: 2px 1px;
+  padding: 8px 36px;
+}
+
+.button2:hover {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+/* footer */
