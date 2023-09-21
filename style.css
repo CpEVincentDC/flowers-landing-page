@@ -19,6 +19,32 @@ li {
 .second-container {
   padding: 0 400px 20px 400px;
 }
+
+.primary-button {
+  background-color: #3882f6;
+  border: none;
+  color: #f9faf8;
+  padding: 6px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-weight: 800;
+  border: 2px solid #008cda;
+  border-radius: 10px;
+}
+.button1:hover {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
 /* Navigation Bar */
 .navbar {
   /* background-color: black; */
@@ -92,7 +118,7 @@ li {
 .second-container {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 70vh;
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -102,21 +128,22 @@ li {
   font-size: 36px;
   font-weight: 800;
   color: #1f2937;
+  margin: -100px 0 50px 0;
 }
 
 .second-container .contain-box {
   display: flex;
-  width: 500px;
   padding: 20px;
   /* border: 1px solid #ccc;
   background-color: #f9b3f2; */
-  width: 200vh;
-  justify-content: space-between;
+  width: 200vw;
+  gap: 50px;
+  justify-content: center;
 }
 
 .contain-box .flower-image {
-  width: 45vh;
-  height: 50vh;
+  width: 10vw;
+  height: 25vh;
   border-radius: 10%;
   border: 5px solid #3882f6;
 }
