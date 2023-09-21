@@ -93,7 +93,7 @@ footer {
   width: auto;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 footer {
@@ -183,12 +183,15 @@ footer {
   box-sizing: border-box;
   height: 20vh;
   width: 50vw;
+}
+
+.inner-section p {
   font-size: 36px;
   font-weight: 300;
   color: #1f2937;
   font-style: italic;
 }
-.quote-section p {
+.quote-section b {
   font-size: 26px;
   font-weight: 800;
   color: #1f2937;
