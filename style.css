@@ -17,7 +17,8 @@ li {
 
 .navbar,
 .container,
-.second-container {
+.second-container,
+.quote-section {
   padding: 0 400px 20px 400px;
 }
 
@@ -80,12 +81,17 @@ li {
   color: slategray;
 }
 
+.container,
+.second-container,
+.quote-section {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
 /* Hero Main Page */
 .container {
-  display: flex;
-  height: 50vh;
   justify-content: space-between;
-  padding-top: 50px;
 }
 
 .hero-container,
@@ -117,12 +123,10 @@ li {
 /* Second Mainpage */
 
 .second-container {
-  display: flex;
   flex-direction: column;
-  height: 60vh;
+
   background-color: white;
   justify-content: center;
-  align-items: center;
 }
 
 .second-container header {
@@ -159,4 +163,28 @@ li {
 }
 .contain-box p {
   color: gray;
+}
+
+/* Quote section */
+
+.quote-section {
+  flex-direction: column;
+  background-color: #e5e7eb;
+  justify-content: center;
+}
+
+#inner-section {
+  box-sizing: border-box;
+  height: 20vh;
+  width: 110vh;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+  font-style: italic;
+}
+.quote-section p {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 0 600px;
 }
